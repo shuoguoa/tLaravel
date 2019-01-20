@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class LoginController extends Controller
 {
     public function getInfo(){
-        $users = DB::connection('mysql::write')->select('select * from user');
+        $users = DB::connection('mysql::read')->select('select * from member');
         var_dump($users);exit;
     }
 }
