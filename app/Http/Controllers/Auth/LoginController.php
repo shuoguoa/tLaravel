@@ -24,8 +24,9 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        $users = DB::connection('mysql::read')->select('select * from member');
-        var_dump($users);exit;
+        //$users = DB::connection('mysql::read')->select('select * from member');
+        //var_dump($users);exit;
+        echo 8888;
         return view('admin.auth.login');
     }
 
