@@ -1,7 +1,7 @@
 @extends('auth.layout')
 
 @section('content')
-    <div class="container" style="background-image: /public/images/login.jpg">
+    <div class="container" style="background-image:<?php echo __PUBLIC__.'/images/login.jpg' ; ?>">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
