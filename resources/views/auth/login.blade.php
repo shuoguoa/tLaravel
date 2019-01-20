@@ -1,14 +1,14 @@
 @extends('auth.layout')
 
 @section('content')
-    <div class="container">
+    <div class="container" style="background-image:<?php echo __PUBLIC__.'/images/login.jpg' ; ?>">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">用户登录</div>
                     <div class="card-body">
 
-                        @include('admin.partials.errors')
+                        @include('auth.partials.errors')
 
                         <form role="form" method="POST" action="{{ url('/login') }}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
