@@ -42,7 +42,6 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        echo 8888;
         return view('auth.login');
     }
 
