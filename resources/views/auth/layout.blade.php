@@ -23,7 +23,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-menu">
-            @include('admin.partials.navbar')
+            @include('auth.partials.navbar')
         </div>
     </div>
 </nav>
