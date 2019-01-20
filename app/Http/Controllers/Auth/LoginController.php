@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -22,13 +21,7 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    public function showLoginForm()
-    {
-        //$users = DB::connection('mysql::read')->select('select * from member');
-        //var_dump($users);exit;
-        echo 8888;
-        return view('admin.auth.login');
-    }
+
 
     /**
      * Where to redirect users after login.
@@ -45,6 +38,11 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function showLoginForm()
+    {
+        return view('admin.auth.login');
     }
 
     // 退出后重定向到登录页
