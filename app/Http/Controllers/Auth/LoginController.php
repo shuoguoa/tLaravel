@@ -42,7 +42,8 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('admin.auth.login');
+        echo 8888;exit;
+        //return view('admin.auth.login');
     }
 
     // 退出后重定向到登录页
