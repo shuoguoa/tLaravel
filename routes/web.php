@@ -20,5 +20,5 @@ Route::get('/', function () {
 
 // 登录退出
 //Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@showLoginForm');
+Route::get('/login', 'Auth\LoginController@showLoginForm');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
