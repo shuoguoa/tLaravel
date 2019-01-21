@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">用户登录</div>ß
+                    <div class="card-header">用户登录</div>
                     <div class="card-body">
 
                         @include('auth.partials.errors')
