@@ -12,7 +12,7 @@
     @yield('styles')
 
 </head>
-<body style="background:{{asset('images/login.jpg')}}">
+<body style="background-image:{{asset('images/login.jpg')}}">
 {{-- Navigation Bar --}}
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container">
