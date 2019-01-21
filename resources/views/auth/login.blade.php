@@ -15,7 +15,7 @@
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group row">
-                                <label class="col-md-4 col-form-label text-md-right">邮箱</label>
+                                <label class="col-md-4 col-form-label text-md-right">户名</label>
                                 <div class="col-md-6">
                                     <input type="email" class="form-control" name="email" value="{{ old('email') }}"
                                            autofocus>
