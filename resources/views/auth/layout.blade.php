@@ -14,19 +14,19 @@
 </head>
 <body style="background-image:url('images/login.jpg')">
 {{-- Navigation Bar --}}
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div class="container">
+{{--<nav class="navbar navbar-expand-md navbar-light navbar-laravel">--}}
+    {{--<div class="container">--}}
         {{--<a class="navbar-brand mr-auto mr-lg-0" href="#">{{ config('blog.title') }} 后台</a>--}}
-        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbar-menu"
-                aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        {{--<button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbar-menu"--}}
+                {{--aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">--}}
+            {{--<span class="navbar-toggler-icon"></span>--}}
+        {{--</button>--}}
 
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            @include('auth.partials.navbar')
-        </div>
-    </div>
-</nav>
+        {{--<div class="collapse navbar-collapse" id="navbar-menu">--}}
+            {{--@include('auth.partials.navbar')--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</nav>--}}
 
 <main class="py-4">
     @yield('content')
